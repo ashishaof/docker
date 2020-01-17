@@ -1,0 +1,46 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 (base) Ashishs-MacBook-Pro:Documents ashishbakshi$ cd\
+(base) Ashishs-MacBook-Pro:~ ashishbakshi$ docker ps -a\
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES\
+b0daf0b04d75        nginx               "nginx -g 'daemon of\'85"   47 minutes ago      Exited (0) 46 minutes ago                       happy_kalam\
+93b7d61edc6d        nginx               "nginx -g 'daemon of\'85"   47 minutes ago      Exited (0) 46 minutes ago                       wizardly_elbakyan\
+c076ee4e492d        nginx               "nginx -g 'daemon of\'85"   47 minutes ago      Up 47 minutes               80/tcp              modest_goldstine\
+(base) Ashishs-MacBook-Pro:~ ashishbakshi$ docker images\
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE\
+nginx               latest              f7bb5701a33c        2 days ago          126MB\
+(base) Ashishs-MacBook-Pro:~ ashishbakshi$ docker container stop b0 93b c0\
+b0\
+93b\
+c0\
+(base) Ashishs-MacBook-Pro:~ ashishbakshi$ docker rm b0 93 c0\
+b0\
+93\
+c0\
+(base) Ashishs-MacBook-Pro:~ ashishbakshi$ docker container ps\
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES\
+(base) Ashishs-MacBook-Pro:~ ashishbakshi$ docker container ps -a\
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES\
+(base) Ashishs-MacBook-Pro:~ ashishbakshi$ docker images\
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE\
+nginx               latest              f7bb5701a33c        2 days ago          126MB\
+(base) Ashishs-MacBook-Pro:~ ashishbakshi$ docker rmi f7\
+Untagged: nginx:latest\
+Untagged: nginx@sha256:b2d89d0a210398b4d1120b3e3a7672c16a4ba09c2c4a0395f18b9f7999b768f2\
+Deleted: sha256:f7bb5701a33c0e572ed06ca554edca1bee96cbbc1f76f3b01c985de7e19d0657\
+Deleted: sha256:8f1984cf0de0461043fcabd6b2a2040325ac001d9897a242e0d80486fe71575e\
+Deleted: sha256:59d91a36ba4b720eadfbf346ddb825c2faa2d66cc7a915238eaf926c4b4b40ee\
+Deleted: sha256:556c5fb0d91b726083a8ce42e2faaed99f11bc68d3f70e2c7bbce87e7e0b3e10\
+(base) Ashishs-MacBook-Pro:~ ashishbakshi$ docker images\
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE\
+(base) Ashishs-MacBook-Pro:~ ashishbakshi$ docker ps -a\
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES\
+(base) Ashishs-MacBook-Pro:~ ashishbakshi$ docker images\
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE\
+(base) Ashishs-MacBook-Pro:~ ashishbakshi$ \
+}

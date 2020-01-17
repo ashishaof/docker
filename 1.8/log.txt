@@ -1,0 +1,2 @@
+touch /log/log.txt
+docker run -v /log/log.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise

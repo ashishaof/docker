@@ -1,0 +1,40 @@
+(base) Ashishs-MBP:/ ashishbakshi$ cd /Users/ashishbakshi/Documents/Univ\ of\ Helsinki/Docker/
+(base) Ashishs-MBP:Docker ashishbakshi$ mkdir 1.6
+(base) Ashishs-MBP:Docker ashishbakshi$ pwd
+/Users/ashishbakshi/Documents/Univ of Helsinki/Docker
+(base) Ashishs-MBP:Docker ashishbakshi$ ls
+1.1.rtf	1.2.rtf	1.3.rtf	1.4.rtf	1.5.rtf	1.6	D
+(base) Ashishs-MBP:Docker ashishbakshi$ cd /1.6
+-bash: cd: /1.6: No such file or directory
+(base) Ashishs-MBP:Docker ashishbakshi$ touch 1.6
+(base) Ashishs-MBP:Docker ashishbakshi$ cd 1.6/
+(base) Ashishs-MBP:1.6 ashishbakshi$ touch dockerfile
+(base) Ashishs-MBP:1.6 ashishbakshi$ ls
+dockerfile
+(base) Ashishs-MBP:1.6 ashishbakshi$ vim dockerfile
+(base) Ashishs-MBP:1.6 ashishbakshi$ docker build -t docker-clock .
+Sending build context to Docker daemon  2.048kB
+Step 1/2 : FROM devopsdockeruh/overwrite_cmd_exercise
+latest: Pulling from devopsdockeruh/overwrite_cmd_exercise
+092586df9206: Pull complete 
+ef599477fae0: Pull complete 
+4530c6472b5d: Pull complete 
+d34d61487075: Pull complete 
+87fc2710b63f: Pull complete 
+e83c771c5387: Pull complete 
+fef6195892ae: Pull complete 
+70e1a68db517: Pull complete 
+c2599bbef3cb: Pull complete 
+c5a7dd6f6ae1: Pull complete 
+446220381e79: Pull complete 
+27d5280e809c: Pull complete 
+Digest: sha256:02e38f4285d5cfaff5ed57ae67a8d99e041027da8f5c972329b46e2b7a47b7d2
+Status: Downloaded newer image for devopsdockeruh/overwrite_cmd_exercise:latest
+ ---> 3d2b622b1849
+Step 2/2 : CMD ["--clock"]
+ ---> Running in 98975aaf3805
+Removing intermediate container 98975aaf3805
+ ---> 77a602c9eea2
+Successfully built 77a602c9eea2
+Successfully tagged docker-clock:latest
+(base) Ashishs-MBP:1.6 ashishbakshi$ 

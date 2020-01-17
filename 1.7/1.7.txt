@@ -1,0 +1,36 @@
+(base) Ashishs-MacBook-Pro:1.7 ashishbakshi$ docker build -t curler .
+Sending build context to Docker daemon  3.072kB
+Step 1/7 : FROM ubuntu:18.04
+ ---> 549b9b86cb8d
+Step 2/7 : RUN apt-get update
+ ---> Using cache
+ ---> bde331af0e01
+Step 3/7 : RUN apt-get install -y curl
+ ---> Using cache
+ ---> debd1f674b35
+Step 4/7 : RUN apt-get install -y bash
+ ---> Using cache
+ ---> a570cfaeb093
+Step 5/7 : ADD curler.sh /
+ ---> Using cache
+ ---> 2abe52fa8024
+Step 6/7 : RUN chmod +x /curler.sh
+ ---> Using cache
+ ---> e98c38021320
+Step 7/7 : CMD /curler.sh
+ ---> Using cache
+ ---> 48ae4d5504ae
+Successfully built 48ae4d5504ae
+Successfully tagged curler:latest
+(base) Ashishs-MacBook-Pro:1.7 ashishbakshi$ docker run -it curler
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+(base) Ashishs-MacBook-Pro:1.7 ashishbakshi$ docker run -it curler

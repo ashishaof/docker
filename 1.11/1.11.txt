@@ -1,0 +1,4 @@
+touch /log/logs.txt
+docker run -d -p 8000:8000 -v /log/logs.txt:/usr/src/app/logs.txt backend
+docker stop jkh73
+docker start jkh73
